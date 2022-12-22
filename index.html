@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css"/>
+</head>
+<body>
+    <!-- This html is designed to replicate Mido's wireframe web page design -->
+
+    <!-- We'll stencil in the main blocks navigator, header, content, footer -->
+
+    <!--  navigator panel -->
+    <!-- we'll make this a flexbox panel containing a logo and some text items -->
+<div id="main-page-div">
+   <!-- <div id="nav-bar">  
+       <nav>  -->
+          <div id="nav-div">
+            <!-- we'll have icon,title,home,about,subject,login-->
+
+            <div id="logo-nav">       <!-- logo design reused throughout -->
+                <div id="logo-nav-container">
+                    <div id="logo-nav-text"><p>LOGO</p></div>
+                </div>
+            </div>
+
+            <div><h1>Web Application</h1></div>
+            <div id="home-div"><h4>Home</h4></div>
+            <div><h4>About</h4></div>
+            <div><h4>Subjects</h4></div>
+            <div><h4>Login</h4></div>
+
+          </div>
+    <!--   </nav>
+    </div> -->
+
+    <!--  header/logo panel -->
+
+    <div id="header-div">
+
+       <div id="logo-div">
+          <div id="logo-container">
+            <div id="logo-text"><p>LOGO</p></div>
+          </div>
+       </div>
+       <div id="header-info-div">
+          <div id="header-title"><h2>About Our Web Applications</h2></div>
+          <div id="header-text"><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.   Voluptate, nisi?<a href="">Learn More</a></p></div>
+       </div>
+
+    </div>
+
+
+    <!--  content panel  -->
+
+<div id="content-container">
+
+      <div id="content-div">
+
+          <div id="content-title">
+              <h2>Products</h2>
+          </div>
+
+         <div id="content-item">
+
+           <div id="content-logo-div">
+              <div id="content-logo-container">
+                <div id="content-logo-text"><p>LOGO</p></div>
+              </div>
+           </div>
+         
+
+          <div id="product-text"><p>Some text Blah Blah</p></div>
+
+          <div id="product-link"><a href="">Learn More</a></div>
+
+         </div>
+
+      </div>
+
+      <!-- repeat product another two times -->
+
+      <!--  commented out to experiment with javascript
+
+      <div id="content-div2">
+
+         <div id="content-title2">
+             <h2>Products</h2>
+         </div>
+
+        <div id="content-item2">
+
+          <div id="content-logo-div2">
+             <div id="content-logo-container2">
+               <div id="content-logo-text2"><p>LOGO</p></div>
+             </div>
+          </div>
+        
+
+         <div id="product-text2"><p>Some text Blah Blah</p></div>
+
+         <div id="product-link2"><a href="">Learn More</a></div>
+
+        </div>
+
+     </div>  
+     
+     
+     <div id="content-div3">
+
+      <div id="content-title3">
+          <h2>Products</h2>
+      </div>
+
+     <div id="content-item3">
+
+       <div id="content-logo-div3">
+          <div id="content-logo-container3">
+            <div id="content-logo-text3"><p>LOGO</p></div>
+          </div>
+       </div>
+     
+
+      <div id="product-text3"><p>Some text Blah Blah</p></div>
+
+      <div id="product-link3"><a href="">Learn More</a></div>
+
+     </div>
+
+    </div>    -->
+
+
+</div>
+
+    <!-- footer panel -->
+
+<div id="footer-container">
+
+    <div id="contact-div">
+      <p>Contact me</p>
+    </div>
+
+    <div id="textbox-container">
+       <textarea placeholder="Enter your message" id="text-div"></textarea>
+       <a href="" id="submit">Submit</a> 
+   </div>
+
+
+</div>
+
+</div>
+
+<script>
+  let itemref1=document.querySelector("#content-div");
+  let itemref2=document.querySelector("#content-div");
+
+  let parentref=document.querySelector("#content-container");
+
+  let myclone=itemref1.cloneNode(true);
+  parentref.appendChild(myclone);
+  myclone=itemref2.cloneNode(true);
+  parentref.appendChild(myclone);
+    
+</script>
+</body>
+</html>
